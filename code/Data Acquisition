@@ -1,0 +1,50 @@
+1. Modified VM instance - changed machine type to n2d-standard-2 and increased persistent disk size to 150 GB
+
+2. Created Kaggle API token and downloaded kaggle.json file
+
+3. Opened SSH command terminal, made directory for Kaggle then checked if its there
+
+mkdir .kaggle
+ls -la 
+
+4. Uploaded kaggle json file, moved it to kaggle directory, then secured the file
+
+ls -l
+mv kaggle.json .kaggle/
+ls -l .kaggle
+chmod 600 .kaggle/kaggle.json
+ls -l .kaggle
+
+5. Installed software packages and set up a python environment 
+
+  sudo apt -y install zip
+	sudo apt -y install python3-pip python3.11-venv
+	python3 -m venv pythondev
+	cd pythondev
+	source bin/activate
+	pip3 install kaggle
+	kaggle datasets list
+
+6. Get Kaggle API command and download kaggle dataset
+	
+kaggle datasets download -d debashis74017/stock-market-data-nifty-50-stocks-1-min-data
+
+7. Unzipped file and see extracted contents
+
+unzip stock-market-data-nifty-50-stocks-1-min-data.zip
+ls -l
+
+8. Authenticated virtual machine, followed link and pasted authorization code after inserting code
+
+gcloud auth login
+
+
+9. Created bucket in cloud storage using command. Manually created bucket files (landing, cleaned, trusted, code, models) in cloud console
+
+gcloud storage buckets create gs://my-bigdata-project-mh --project=evocative-bus-433103-s6 --default-storage-class=STANDARD --location=us-central1 --uniform-bucket-level-access
+
+10. Copied files into the landing file in the project bucket. Used recursive to copy all csv files
+ gcloud storage cp --recursive *.csv gs://my-bigdata-project-mh/landing/
+
+11.See all the files in the landing folder in the project bucket. Also, double checked manually in the bucket tab on cloud console
+gcloud storage ls -l gs://my-bigdata-project-mh/landing/
