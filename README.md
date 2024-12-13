@@ -12,12 +12,12 @@ Develop a machine learning model to predict next day stock closing price using 6
 4. Visualizations: Used GCP Dataproc Cluster to use Matplotlib and Seaborn libraries to visualize prediction results and feature importance
 
 ### Results
-- Best Model R squared score:  0.999994735293215
-- Best Model RMSE score: 7.4824094473582
-- Best Model 3 Fold Cross Validation Metric Score (RMSE): 7.797832097041481
-- Best Model Regularization Parameter: 0.5
-- Best Model Elastic Net Parameter: 0
-- Significant Features: CCI10, macd510, macd520, CCI15, MFI, ema15, ATR, ADX10, WILLR, macd1226
+- **Best Model R squared score:**  0.999994735293215
+- **Best Model RMSE score**: 7.4824094473582
+- **Best Model 3 Fold Cross Validation Metric Score (RMSE)**: 7.797832097041481
+- **Best Model Regularization Parameter**: 0.5
+- **Best Model Elastic Net Parameter**: 0
+- **Significant Features**: CCI10, macd510, macd520, CCI15, MFI, ema15, ATR, ADX10, WILLR, macd1226
 
 ### Tech Stack
 - **Language**: Python
