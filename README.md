@@ -3,7 +3,7 @@
 - **Stock Market Prediction Data - Nifty 100** ([Kaggle link](https://www.kaggle.com/datasets/debashis74017/stock-market-data-nifty-50-stocks-1-min-data/data))
 
 ### Goal
-Develop a machine learning model to predict next day stock closing price using 66 gigabytes of historical stock data from the Nifty 100 index. The features include opening price, volume, date, and more than 55 technical indicators. This project utilizes big data and cloud technologies to create a machine learning pipeline. This project aims to help stock investors and business oriented professionals make data driven decisions
+Develop a linear regression machine learning model to predict next day stock closing price using 66 gigabytes of historical stock data from the Nifty 100 index. The features include opening price, volume, date, and more than 55 technical indicators. This project utilizes big data and cloud technologies to create a machine learning pipeline. This project aims to help stock investors and business oriented professionals make data driven decisions
 
 ### Summary
 1. Data Acquisition: Used GCP VM instance to download dataset into Google Cloud Storage bucket
